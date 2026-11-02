@@ -1,17 +1,147 @@
-# ana_muslim
+<div align="center">
 
-islamic app for real muslim
+  # 🕌 تطبيق "أنا مسلم" - Ana Muslim App
 
-## Getting Started
+  **تطبيق إسلامي فريد ومتكامل يجمع بين المصحف الشريف، مواقيت الصلاة الدقيقة أوفلاين، بوصلة القبلة الفاخرة، المستشار الذكي "نور"، ولوحة متابعة العادات والعبادات.**
 
-This project is a starting point for a Flutter application.
+  [![Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?logo=flutter)](https://flutter.dev)
+  [![Dart](https://img.shields.io/badge/Language-Dart-0175C2?logo=dart)](https://dart.dev)
+  [![State Management](https://img.shields.io/badge/State%20Management-BLoC-blue)](https://bloclibrary.dev)
+  [![Backend](https://img.shields.io/badge/Backend-Supabase-3ECF8E?logo=supabase)](https://supabase.com)
+  [![AI Engine](https://img.shields.io/badge/AI%20Engine-Gemini%20Flash-4285F4?logo=google-gemini)](https://aistudio.google.com)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A few resources to get you started if this is your first Flutter project:
+</div>
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🌟 مميزات التطبيق الرئيسية (Main Features)
+
+### 1. 📖 المصحف الشريف والسور الصوتية
+- عرض كافة سور القرآن الكريم مع تتبع آخر سورة تم قراءتها ومكان التوقف.
+- مشغل صوتي متقدم بصوت **الشيخ مشاري العفاسي** مع إمكانية التنزيل المحلي للاستماع في وضع عدم الاتصال (أوفلاين).
+- البحث السريع باسم السورة أو رقم الآية.
+
+### 2. 🕌 مواقيت الصلاة والأذان الأوفلاين 100%
+- حساب فلكي دقيق لمواقيت الصلوات الخمس بالاعتماد على الموقع الجغرافي المباشر (GPS).
+- جدولة إشعارات الأذان بصوت **الحرم المكي الشريف** تعمل تلقائياً بدون الحاجة للاتصال بالإنترنت (Offline Engine).
+- خيارات مرنة لتحديد طرق حساب المواقيت (أم القرى، الهيئة المصرية، رابطة العالم الإسلامي، كراتشي، ISNA).
+
+### 3. 🧭 بوصلة القبلة الفاخرة (Interactive Qibla Compass)
+- تصميم قرص بوصلة إسلامي دوار بالدرجات والاتجاهات الأربعة.
+- مؤشر الكعبة المشرفة الذهبي ثلاثي الأبعاد 🕋.
+- **تنبيه المحاذاة الزمردي ✨:** تتوهج الشاشة باللون الأخضر وتصوت للتنبيه فور التطابق مع اتجاه القبلة الصحيح.
+- كارت إرشادات توضيحي لمعايرة البوصلة وضمان أعلى دقة للحساسات.
+
+### 4. 🤖 المستشار الذكي "نور" (AI Consultant)
+- مستشار إسلامي روحي تفاعلي مدعوم بنموذج الذكاء الاصطناعي **Google Gemini Flash**.
+- يقدم نصائح وإرشادات روحية ونفسية مبنية على القرآن الكريم والسنة النبوية بأسلوب رحيم ومشجع.
+- يعمل أونلاين وأوفلاين من خلال محرك إجابات إسلامية مدمجة للطوارئ بدون الحاجة لإعدادات معقدة.
+
+### 5. 📊 لوحة متابعة العادات والعبادات (Habit Tracker)
+- **عادات أواظب عليها:** متابعة الورد القرآني، الأذكار، الاستغفار، وصلاة الوتر مع نسبة إنجاز يومية دقيقة.
+- **عادات أتركها (عدّاد تفاعلي أوفلاين):** متابعة الأيام المتتالية لترك العادات السلبية (ترك الغيبة، تقليل التصفح...) مع إمكانية إضافة عادات سلبية جديدة وزيادة العداد يومياً.
+- حفظ وتخزين البيانات محلياً مع المزامنة الصامتة في الخلفية مع سحابة Supabase.
+
+### 6. 🎧 المكتبة الدعوية والدروس الصوتية
+- تصفح واستماع للدروس والمحاضرات الإسلامية المأخوذة من منصات موثوقة (IslamHouse).
+- **التخزين المحلي التلقائي:** إمكانية تنزيل الدروس وحفظها أوفلاين بأسماء الشيوخ والعناوين لسماعها في أي وقت دون إنترنت.
+
+### 7. 📿 الأذكار والسبحة الإلكترونية
+- قسم حصن المسلم وأذكار الصباح والمساء والنوم.
+- الأربعون النووية وشرح الأحاديث الشريفة.
+- سبحة إلكترونية تفاعلية مع أعداء لمس وزر إعادة الضبط.
+
+### 8. 👤 وضع الضيافة والتسجيل المرن (Guest & Auth Mode)
+- إمكانية تجربة واستخدام كافة خدمات التطبيق العادية كضيف بدون حساب.
+- دعم تسجيل الدخول وإنشاء الحساب بـ Supabase مع تفعيل التنبيه بالبريد الإلكتروني.
+
+---
+
+## 🏗️ البنية التحتية والتقنيات المستخدمة (Tech Stack)
+
+| التقنية / الحزمة | الاستخدام والوصف |
+| :--- | :--- |
+| **Flutter & Dart** | إطار العمل الرئيسي لبناء التطبيق لشاشات Android & iOS |
+| **Flutter BLoC (`flutter_bloc`)** | نمط إدارة الحالة المعماري (Clean Architecture + BLoC) |
+| **Supabase (`supabase_flutter`)** | قاعدة البيانات السحابية والمصادقة لبيانات المستخدمين |
+| **Google Generative AI (`google_generative_ai`)** | محرك الذكاء الاصطناعي الخاص بالمستشار "نور" (Gemini API) |
+| **Just Audio & Dio (`just_audio`, `dio`)** | تشغيل وتنزيل الصوتيات والتخزين المؤقت أوفلاين |
+| **Flutter Local Notifications (`flutter_local_notifications`)** | جدولة وإرسال إشعارات الأذان والتنبيهات المحلية |
+| **Adhan (`adhan`)** | الحساب الفلكي الدقيق لمواقيت الصلاة |
+| **Flutter Qiblah & Geolocator (`flutter_qiblah`, `geolocator`)** | مستشعرات البوصلة وتحديد الموقع وتوجيه الكعبة |
+| **Shared Preferences (`shared_preferences`)** | التخزين المحلي الآمن لإعدادات وعدادات المستخدم |
+
+---
+
+## 📁 هيكل مجلدات المشروع (Project Structure)
+
+```text
+ana_muslim/
+├── android/                   # إعدادات وتكوينات نظام أندرويد
+├── ios/                       # إعدادات وتكوينات نظام أبل iOS
+├── assets/                    # الصوتيات، صور الأيقونات، وملفات الـ JSON
+│   ├── audio/                 # صوت الأذان (adhan.mp3)
+│   ├── json/                  # الأحاديث والأذكار المدمجة
+│   └── animations/            # الرسوم المتحركة شاشة البداية
+└── lib/
+    ├── main.dart              # نقطة انطلاق التطبيق والتهيئة الفورية
+    ├── core/                  # الخدمات العامة، الألوان، والثيمات
+    │   ├── constants/         # ألوان وشعارات أنا مسلم
+    │   ├── services/          # خدمة الأذان والمزامنة الخلفية
+    │   ├── theme/             # إدارة الثيم الفاتح والداكن (ThemeBloc)
+    │   └── utils/             # نظام التجاوب الذكي (Responsive) ومحول الأخطاء
+    └── features/              # الميزات بتقسيم Clean Architecture
+        ├── ai_consultant/     # المستشار الذكي "نور" ولوحة العادات
+        ├── auth/              # تسجيل الدخول، إنشاء الحساب، ووضع الضيف
+        ├── lessons/           # المكتبة الدعوية والدروس أوفلاين
+        ├── main_layout/       # شاشات الرئيسية، البداية، والإشعارات
+        ├── profile/           # إدارة الملف الشخصي والتعديل
+        └── quran_islamic/     # المصحف، القبلة، الأذكار، الأحاديث، والسبحة
+```
+
+---
+
+## 🚀 كيفية تشغيل المشروع للتعاديل والتطوير (Getting Started)
+
+### المتطلبات الأساسية (Prerequisites)
+- مثبت **Flutter SDK** (الإصدار 3.13.0 أو أحدث).
+- حزمة **Android Studio** أو **VS Code** مع إضافات Flutter/Dart.
+- بيئة **JDK 17** لترجمة أندرويد.
+
+### خطوات التثبيت والتشغيل
+1. **استنساخ المستودع (Clone the repository):**
+   ```bash
+   git clone https://github.com/your-username/ana_muslim.git
+   cd ana_muslim
+   ```
+
+2. **تنزيل حزم وباقات التطبيق (Install Dependencies):**
+   ```bash
+   flutter pub get
+   ```
+
+3. **تشغيل التطبيق على الهاتف أو المحاكي (Run the app):**
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 📱 توافقية الأجهزة (Device Compatibility)
+
+- **Android:** يتوافق مع أندرويد `Android 5.0 (Lollipop - API 21)` فما فوق (يشمل أكثر من 99.8% من الأجهزة والهواتف والتابلت).
+- **iOS:** يتوافق مع نظام `iOS 12.0` أو أعلى لجهاز الآيفون والآيباد.
+- **التصميم المتجاوب (Responsive UI):** أُنشئ ليطابق الهواتف الصغيرة، العادية، الكبيرة، القابلة للطي، والأجهزة اللوحية بكل مرونة.
+
+---
+
+## 📄 الرخصة (License)
+
+هذا المشروع مفتوح المصدر ومتاح تحت رخصة **[MIT License](LICENSE)**.
+
+<div align="center">
+
+  **صُنع بحب وإتقان لخدمة كل مسلم 🕌**
+
+</div>
